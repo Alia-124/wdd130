@@ -1,149 +1,162 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
     line-height: 1.6;
-}
-
-img {
-    max-width: 100%;
+    color: #333;
+    background-color: #f4f9f9;
 
 }
 
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    padding: 20px;
-    background: #0a5c8d;
-}
-
-.logo {
-    width: 100px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-}
-
-nav a:hover {
-    background: white;
-    color: #0a5c8d;
-
-}
-
-.hero {
-    position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100px;
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 5);
-    padding: 15px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    right: 40px;
-    background: rgba(255, 255 255, 85);
-    padding: 20px;
-
-}
-
-.hero article img {
-    float: right;
-    width: 150px;
-    margin-left: 15px;
-
-}
-
-.history h2 {
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 25px 1fr;
-    gap: 20px;
-    align-items: center;
-}
-
-.history-content img {
-    width: 100%;
-}
-
-.adventures {
-    padding: 40px 20px;
-
-}
-
-.adventures h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.adventures-gallery {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
-
-}
-
-.adventures-gallery figure {
-    flex: 1;
-    text-align: center;
-}
-
-.adventures-gallery img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-
-}
-
-figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-
-}
-
-footer {
+header{
+    background-color: #f4f9f9;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: #0a5c8d;
+    padding: 20px 50px;
+}
+
+header img{
+    width: 100px;
+
+}
+
+nav a:hover{
+    color: #ffd166;
+
+}
+
+.trip_cta{
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    );
+    url ("../images/rafting.jpg");
+
+    background-size: cover;
+    background-position: center;
     color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.socaillink {
+.trip_cta h1{
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+
+}
+
+.button{
+    background-color: #ee9b00;
+    margin-bottom: 25px;
+}
+
+button:hover{
+    background-color: #ca6702;
+}
+
+.trip-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 50px;
+}
+
+.trip-grid article{
+    background-color: white ;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0,15);
+    text-align: center;
+
+}
+
+.trip-grid img {
+    width: 100px;
+    height:220px;
+    object-fit: cover;
+}
+
+.trip-grid h2{
+    color: #005f73;
+    padding: 15px;
+}
+
+.trip-grid p{
+    padding: 0 20px 25px;
+}
+
+main section:last-child{
+    padding:40px 50px;
+}
+
+main section:last-child h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color:#005f73;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th{
+    background-color: #005f73;
+    color: white;
+    padding: 15px;
+}
+
+td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+}
+
+tr:hover{
+    background-color: #e9f5f5;
+}
+footer{
+    background-color: #003049;
+    color: white;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
 }
 
-.socaillink img {
+.sociallink img{
     width: 35px;
+    margin-left: 15px;
+}
 
+.sociallink a:hover{
+    opacity: 0.7;
+}
+@media ( max-width:768px){
+
+     header{
+        flex-direction: column;
+    }
+    nav{
+        margin-top: 20px;
+
+    }
+
+    .trip-grid{
+    grid-template-columns: 1fr;
+    padding: 20px;
+    }
+    footer{
+    flex-direction: column;
+    gap: 20px;
+    } 
 }
