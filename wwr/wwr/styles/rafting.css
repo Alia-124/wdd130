@@ -1,4 +1,15 @@
 /*===== GENERAL STYLES ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0b3d5c;
+    --accent-color: #f4a261;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -42,6 +53,10 @@ nav a:hover {
     text-align: center;
 }
 
+.hero article {
+    position: absolute;
+}
+
 .hero h1 {
     position: absolute;
     top: 40%;
@@ -53,6 +68,10 @@ nav a:hover {
     width: 80%;
 }
 
+.hero article img {
+    float: right;
+}
+
 /*===== ABOUT SECTION =======*/
 .about {
     padding: 40px;
@@ -60,7 +79,7 @@ nav a:hover {
 }
 
 .about h2 {
-    color: #0b3d5c;
+    color: var(--primary-color)
 }
 
 .about p {
@@ -76,7 +95,7 @@ nav a:hover {
 
 .histroy h2 {
     text-align: center;
-    color: #0b3d5c;
+    color: var(--primary-color);
 }
 
 /*===== CLIENT SECTION=======*/
@@ -93,7 +112,7 @@ nav a:hover {
 /*===== FOOTER======*/
 
 footer {
-    background-color: #0b3d5c;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px;
