@@ -84,7 +84,7 @@ nav a:hover {
 }
 
 .about h2 {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .about p {
@@ -113,7 +113,7 @@ nav a:hover {
     width: 300px;
     max-width: 100%;
 }
-.socialmedia{
+.socialmedia a{
     text-decoration:none;
 }
 
