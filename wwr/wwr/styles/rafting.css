@@ -55,6 +55,9 @@ nav a:hover {
 
 .hero article {
     position: absolute;
+    bottom:20px;
+    left: 20px;
+    right:20px;
 }
 
 .hero h1 {
@@ -64,12 +67,14 @@ nav a:hover {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 20%;
+    padding: 20px;
     width: 80%;
 }
 
 .hero article img {
     float: right;
+    width:150px;
+    margin-left:15px;
 }
 
 /*===== ABOUT SECTION =======*/
@@ -87,26 +92,29 @@ nav a:hover {
 }
 
 /*===== hISTORY SECTION =======*/
-.histroy {
+.history {
     background-color: #f2f2f2;
     padding: 40px;
 
 }
 
-.histroy h2 {
+.history h2 {
     text-align: center;
     color: var(--primary-color);
 }
 
 /*===== CLIENT SECTION=======*/
 .clients {
-    width: 40px;
+    width:  100%;
     text-align: center;
 }
 
 .clients img {
     width: 300px;
     max-width: 100%;
+}
+.socialmedia{
+    text-decoration:none;
 }
 
 /*===== FOOTER======*/
