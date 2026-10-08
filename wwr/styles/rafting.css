@@ -54,6 +54,23 @@ nav a:hover {
 
 .hero {
     position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(20, 45, 50, 0.8);
     text-align: center;
 }
 
@@ -72,8 +89,33 @@ nav a:hover {
     width: 80%;
 }
 
-.hero article img {
-    float: right;
+.hero-heading h2 {
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+.hero-message {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(240, 195, 85, 0.95);
+    padding: 20px;
+}
+
+.hero-message p {
+    flex: 1;
+    margin: 0;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+.hero-message img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
 }
 
 /*===== ABOUT SECTION =======*/
